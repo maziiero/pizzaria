@@ -1,0 +1,148 @@
+/*reset css para tirar todas as margens dos elementos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 20px;
+}
+.cabecalho{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.cabecalho > img{
+    height: 60px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu > li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.menu > li > a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+    font-weight: 600;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.menu > li > a:hover{
+    background-color: rgb(118, 8, 8);
+}
+
+/*estilizando nosso banner*/
+.banner {
+    height: 400px;
+    background-image: url(/img/pizza.jpg);
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 10px green;
+}
+
+.banner > h1 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.botao-vazado{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px ;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.34);
+    border-radius: 5px;
+}
+.botao-vazado:hover{
+    background-color: rgba(0, 0, 0, 0.466);
+    color: rgb(255, 255, 255);
+}
+
+/*estilizando elementos do corpo da página*/
+main{
+  max-width: 1300px;
+   margin: 0 auto ;
+   text-align: center;
+   margin-top: 30px;
+
+}
+
+h2 {
+    color: rgb(15, 69, 15);
+}
+hr{
+    border: none;
+    background: rgb(217,188,188);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255,0,52,1) 58%, rgba(240, 236, 237, 0.219) 100%);
+    height: 3px;
+    margin: 10px 20px;
+}   
+.sabores{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+}
+.sabor{
+    margin: 10px;
+    background-color: rgb(97, 203, 97);
+    border-radius: 40px;
+    padding-bottom: 20px;
+    margin:10px;
+    border: 5px;
+    border-radius: 20px;
+    width: 300px;
+    min-width: 300px;
+}
+.sabor > img{
+    width: 100%;
+}
+.preco{
+    background-color: yellow;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 180px;
+    margin-left: 60px;
+}
+div > img{
+    border-radius:  30px 30px 0 0;
+}
+
+.nome {
+    color: white;
+     text-shadow: 3px 2px 3px black ;
+}
+
+.promocoes{
+    overflow: scroll hidden;
+    display: flex;
+    justify-content: center;
+}
+.promocoes::-webkit-scrollbar{
+    display: none;
+}
+p{
+    text-align: center;
+}
+.contato{
+    margin-top: 60px;
+    padding: 50px 731px;
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    box-shadow: 60px 1px 45px green;
+    display: flex;
+    align-items: center;
+}
